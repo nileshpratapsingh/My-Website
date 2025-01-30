@@ -1,0 +1,374 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #52f1e1;
+    color: #333;
+}
+body{
+    image-rendering: auto;
+    
+}
+
+body {
+    /* background-image: url('https://dreamimaginations.com/wp-content/uploads/2023/08/Old-Tailor-Shop-Inside-Kowloon-Walled-City-AI-Artwork-37-574x1024.jpg'); */
+    background-image: url('https://img.freepik.com/premium-photo/painting-sunset-with-bench-bench_1135095-17446.jpg?w=740');
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #222222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 9px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f7f5e6;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+  .form button {
+    padding: 10px 20px;
+    background-color: #4141cd;
+    color: rgb(253, 255, 249);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #45a049;
+  }
+   .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #222222;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 9px 11px rgba(0, 0, 0, 0.601);;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .sidebar ul li a{
+
+    color:rgb(214, 225, 10)f;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;background-color: 0.3s ease;
+}
+
+.sidebar ul li a :hover{
+    color: #3ffa15;
+    background-color: #1d84ea00;
+    border-radius: 5px;
+} 
+  
+  
+  @media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+  @media(max-width: 400px){
+        .sidebar{
+            width: 100%;
+        }  
+    }
+
+
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;background-color: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3ffa15;
+    background-color: #1d84ea00;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ecdede;
+    background-color: #222;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px;
+    box-shadow: 0px 10px 10px 9px rgba(0, 0, 0, 0.334) ;
+}
+section h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0; /* Start with hidden heading */
+    transform: translateY(-50px); /* Start from above */
+}
+
+/* Define the slide-down animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the heading */
+.slide-down {
+    animation: slideDown 1s ease-out forwards;
+}
+
+.loginform{
+    text-align: center;
+    padding: 50px;
+    background-color: #232523;
+    background-size:contain;
+    margin: 20px;
+    border-radius: 20px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #52f1e1
+    
+}
+#email{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #22222200;
+}
+#password{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #22222200;
+}
+.loginform label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+}
+.loginform input[type="email"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.loginform input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.loginform button {
+    width: 20%;
+    padding: 10px;
+    background-color:#222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px 1px rgba(0, 0, 0, 0.704);
+}
+
+.loginform button[type="button"] {
+    background-color: #6c757d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginform button:hover {
+    background-color: #0056b3;
+}
+
+.loginform button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+br {
+    margin: 100px 0;
+    text-align: center;
+    padding: 20%;
+}
+
+    
+
+/* Tiles */
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+section ul li {
+    background: #222;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.334) ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.511);
+}
+
+section ul li img {
+    width: 95px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+section ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+section ul li a:hover {
+    color: #cbf10c;
+}
+
+.servicecontainer{
+    color: #52f1e1;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.servicecontainer ul li a:hover {
+    color: #ff0000;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-links li {
+    display: inline-block;
+}
+
+footer .social-links li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links li a:hover {
+    color: #ffeb3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
